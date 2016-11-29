@@ -21,9 +21,7 @@ namespace Login
 
         private void salir_Click(object sender, EventArgs e)
         {
-            //VentanaPrincipal.ActiveForm.Close();
-            Conrol2 yu = new Conrol2();
-            yu.despliega();
+            VentanaPrincipal.ActiveForm.Close();
         }
 
         private void crearCadenas_Click(object sender, EventArgs e)
