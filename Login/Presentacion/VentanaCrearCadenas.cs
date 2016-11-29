@@ -12,6 +12,11 @@ namespace Login
 {
     public partial class VentanaCrearCadenas : Form
     {
+        /*Aquí es donde debes poner lo de la ventana que 
+          estas haciendo alex.
+          Yo solo puse un boton de prueba ahí tu le pones lo demas que hace falta 
+          Por favaor*/
+
         public VentanaCrearCadenas()
         {
             InitializeComponent();
