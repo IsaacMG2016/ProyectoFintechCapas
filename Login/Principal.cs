@@ -8,6 +8,9 @@ namespace Login
 {
     public class Principal
     {
+        /*YA funciona las pinches mamadas del Irving 
+          Falta que le llame a su chavo el Ruben para que 
+          nos de Visto bueno haber si no lo manda a la verga.*/
         public static void Main()
         {
             Principal p = new Principal();
