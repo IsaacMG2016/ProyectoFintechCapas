@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clasificación de procesos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clasificación de procesos.Designer.cs">
+      <DependentUpon>Clasificación de procesos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
       <DependentUpon>VentanaAdministracionUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Usuario.cs" />
+    <EmbeddedResource Include="Clasificación de procesos.resx">
+      <DependentUpon>Clasificación de procesos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
