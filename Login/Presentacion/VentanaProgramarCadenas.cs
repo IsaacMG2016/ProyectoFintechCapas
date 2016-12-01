@@ -12,6 +12,10 @@ namespace Login
 {
     public partial class VentanaProgramarCadenas : Form
     {
+        /*Se Modifica la ventana de Programacion de cadenas 
+          Isaac MG 29/Nov/2016
+          version 0.2
+         */
         public VentanaProgramarCadenas()
         {
             InitializeComponent();
