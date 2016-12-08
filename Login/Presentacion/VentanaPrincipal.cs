@@ -19,11 +19,6 @@ namespace Login
             InitializeComponent();
         }
 
-        private void salir_Click(object sender, EventArgs e)
-        {
-            VentanaPrincipal.ActiveForm.Close();
-        }
-
         private void crearCadenas_Click(object sender, EventArgs e)
         {
             control = new ControlVentanaPrincipal();
@@ -47,7 +42,5 @@ namespace Login
             control = new ControlVentanaPrincipal();
             control.administrarUsuarios();
         }
-
-        
     }
 }
