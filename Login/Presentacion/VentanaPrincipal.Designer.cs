@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
             this.crearCadenas = new System.Windows.Forms.Button();
             this.programarCadenas = new System.Windows.Forms.Button();
             this.ejecutarCadenas = new System.Windows.Forms.Button();
@@ -58,47 +59,59 @@
             // 
             // crearCadenas
             // 
-            this.crearCadenas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.crearCadenas.Location = new System.Drawing.Point(12, 12);
+            this.crearCadenas.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.crearCadenas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.crearCadenas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.crearCadenas.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.crearCadenas.Location = new System.Drawing.Point(18, 12);
             this.crearCadenas.Name = "crearCadenas";
-            this.crearCadenas.Size = new System.Drawing.Size(100, 100);
+            this.crearCadenas.Size = new System.Drawing.Size(118, 100);
             this.crearCadenas.TabIndex = 0;
             this.crearCadenas.Text = "Crear Cadenas";
-            this.crearCadenas.UseVisualStyleBackColor = true;
+            this.crearCadenas.UseVisualStyleBackColor = false;
             this.crearCadenas.Click += new System.EventHandler(this.crearCadenas_Click);
             // 
             // programarCadenas
             // 
-            this.programarCadenas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.programarCadenas.Location = new System.Drawing.Point(136, 12);
+            this.programarCadenas.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.programarCadenas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.programarCadenas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.programarCadenas.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.programarCadenas.Location = new System.Drawing.Point(157, 12);
             this.programarCadenas.Name = "programarCadenas";
-            this.programarCadenas.Size = new System.Drawing.Size(100, 100);
+            this.programarCadenas.Size = new System.Drawing.Size(118, 100);
             this.programarCadenas.TabIndex = 1;
-            this.programarCadenas.Text = "Planificar ejecuciones";
-            this.programarCadenas.UseVisualStyleBackColor = true;
+            this.programarCadenas.Text = "Planificar Ejecuciones";
+            this.programarCadenas.UseVisualStyleBackColor = false;
             this.programarCadenas.Click += new System.EventHandler(this.programarCadenas_Click);
             // 
             // ejecutarCadenas
             // 
-            this.ejecutarCadenas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ejecutarCadenas.Location = new System.Drawing.Point(260, 12);
+            this.ejecutarCadenas.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ejecutarCadenas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ejecutarCadenas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ejecutarCadenas.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.ejecutarCadenas.Location = new System.Drawing.Point(297, 12);
             this.ejecutarCadenas.Name = "ejecutarCadenas";
-            this.ejecutarCadenas.Size = new System.Drawing.Size(100, 100);
+            this.ejecutarCadenas.Size = new System.Drawing.Size(118, 100);
             this.ejecutarCadenas.TabIndex = 2;
             this.ejecutarCadenas.Text = "Ejecutar cadenas";
-            this.ejecutarCadenas.UseVisualStyleBackColor = true;
+            this.ejecutarCadenas.UseVisualStyleBackColor = false;
             this.ejecutarCadenas.Click += new System.EventHandler(this.ejecutarCadenas_Click);
             // 
             // administrar
             // 
             this.administrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.administrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.administrar.Location = new System.Drawing.Point(833, 12);
+            this.administrar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.administrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.administrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.administrar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.administrar.Location = new System.Drawing.Point(809, 12);
             this.administrar.Name = "administrar";
-            this.administrar.Size = new System.Drawing.Size(100, 100);
+            this.administrar.Size = new System.Drawing.Size(118, 100);
             this.administrar.TabIndex = 3;
             this.administrar.Text = "Administrar";
-            this.administrar.UseVisualStyleBackColor = true;
+            this.administrar.UseVisualStyleBackColor = false;
             this.administrar.Click += new System.EventHandler(this.administrar_Click);
             // 
             // groupBoxHistorico
@@ -106,14 +119,17 @@
             this.groupBoxHistorico.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxHistorico.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxHistorico.Controls.Add(this.historicoDataGridView);
             this.groupBoxHistorico.Controls.Add(this.groupBoxBusqueda);
+            this.groupBoxHistorico.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.groupBoxHistorico.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBoxHistorico.Location = new System.Drawing.Point(12, 118);
             this.groupBoxHistorico.Name = "groupBoxHistorico";
             this.groupBoxHistorico.Size = new System.Drawing.Size(921, 433);
             this.groupBoxHistorico.TabIndex = 4;
             this.groupBoxHistorico.TabStop = false;
-            this.groupBoxHistorico.Text = "Historial de ejecuciones";
+            this.groupBoxHistorico.Text = "Historial de Ejecuciones";
             // 
             // historicoDataGridView
             // 
@@ -126,10 +142,10 @@
             this.historicoDataGridView.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.historicoDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.historicoDataGridView.ColumnHeadersHeight = 40;
-            this.historicoDataGridView.Location = new System.Drawing.Point(6, 134);
+            this.historicoDataGridView.Location = new System.Drawing.Point(6, 144);
             this.historicoDataGridView.Name = "historicoDataGridView";
             this.historicoDataGridView.ReadOnly = true;
-            this.historicoDataGridView.Size = new System.Drawing.Size(909, 284);
+            this.historicoDataGridView.Size = new System.Drawing.Size(909, 274);
             this.historicoDataGridView.TabIndex = 2;
             // 
             // groupBoxBusqueda
@@ -152,146 +168,162 @@
             this.groupBoxBusqueda.Controls.Add(this.labelPeriodo);
             this.groupBoxBusqueda.Controls.Add(this.labelUltimasEjec);
             this.groupBoxBusqueda.Controls.Add(this.labelNombre);
+            this.groupBoxBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.groupBoxBusqueda.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBoxBusqueda.Location = new System.Drawing.Point(6, 19);
             this.groupBoxBusqueda.Name = "groupBoxBusqueda";
-            this.groupBoxBusqueda.Size = new System.Drawing.Size(909, 109);
+            this.groupBoxBusqueda.Size = new System.Drawing.Size(909, 119);
             this.groupBoxBusqueda.TabIndex = 0;
             this.groupBoxBusqueda.TabStop = false;
             this.groupBoxBusqueda.Text = "Busqueda";
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(652, 35);
+            this.comboBox1.Location = new System.Drawing.Point(659, 32);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(121, 28);
             this.comboBox1.TabIndex = 15;
             // 
             // comboBoxClasificacion
             // 
+            this.comboBoxClasificacion.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.comboBoxClasificacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxClasificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.comboBoxClasificacion.FormattingEnabled = true;
-            this.comboBoxClasificacion.Location = new System.Drawing.Point(451, 35);
+            this.comboBoxClasificacion.Location = new System.Drawing.Point(452, 32);
             this.comboBoxClasificacion.Name = "comboBoxClasificacion";
-            this.comboBoxClasificacion.Size = new System.Drawing.Size(181, 21);
+            this.comboBoxClasificacion.Size = new System.Drawing.Size(181, 28);
             this.comboBoxClasificacion.TabIndex = 14;
             // 
             // labelPeriodode
             // 
             this.labelPeriodode.AutoSize = true;
-            this.labelPeriodode.Location = new System.Drawing.Point(6, 80);
+            this.labelPeriodode.Location = new System.Drawing.Point(7, 85);
             this.labelPeriodode.Name = "labelPeriodode";
-            this.labelPeriodode.Size = new System.Drawing.Size(19, 13);
+            this.labelPeriodode.Size = new System.Drawing.Size(24, 17);
             this.labelPeriodode.TabIndex = 13;
             this.labelPeriodode.Text = "de";
             // 
             // labelPeriodoa
             // 
             this.labelPeriodoa.AutoSize = true;
-            this.labelPeriodoa.Location = new System.Drawing.Point(221, 80);
+            this.labelPeriodoa.Location = new System.Drawing.Point(223, 86);
             this.labelPeriodoa.Name = "labelPeriodoa";
-            this.labelPeriodoa.Size = new System.Drawing.Size(13, 13);
+            this.labelPeriodoa.Size = new System.Drawing.Size(16, 17);
             this.labelPeriodoa.TabIndex = 12;
             this.labelPeriodoa.Text = "a";
             // 
             // dateTimePickerFin
             // 
-            this.dateTimePickerFin.Location = new System.Drawing.Point(240, 78);
+            this.dateTimePickerFin.Location = new System.Drawing.Point(247, 83);
             this.dateTimePickerFin.Name = "dateTimePickerFin";
             this.dateTimePickerFin.ShowCheckBox = true;
-            this.dateTimePickerFin.Size = new System.Drawing.Size(185, 20);
+            this.dateTimePickerFin.Size = new System.Drawing.Size(185, 23);
             this.dateTimePickerFin.TabIndex = 11;
             // 
             // dateTimePickerInicio
             // 
-            this.dateTimePickerInicio.Location = new System.Drawing.Point(31, 78);
+            this.dateTimePickerInicio.Location = new System.Drawing.Point(32, 83);
             this.dateTimePickerInicio.Name = "dateTimePickerInicio";
             this.dateTimePickerInicio.ShowCheckBox = true;
-            this.dateTimePickerInicio.Size = new System.Drawing.Size(184, 20);
+            this.dateTimePickerInicio.Size = new System.Drawing.Size(184, 23);
             this.dateTimePickerInicio.TabIndex = 10;
             // 
             // labelUltimasF
             // 
             this.labelUltimasF.AutoSize = true;
-            this.labelUltimasF.Location = new System.Drawing.Point(324, 35);
+            this.labelUltimasF.Location = new System.Drawing.Point(338, 36);
             this.labelUltimasF.Name = "labelUltimasF";
-            this.labelUltimasF.Size = new System.Drawing.Size(64, 13);
+            this.labelUltimasF.Size = new System.Drawing.Size(84, 17);
             this.labelUltimasF.TabIndex = 9;
-            this.labelUltimasF.Text = "ejecuciones";
+            this.labelUltimasF.Text = "Ejecuciones";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(277, 32);
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.textBox2.Location = new System.Drawing.Point(290, 32);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(41, 20);
+            this.textBox2.Size = new System.Drawing.Size(41, 26);
             this.textBox2.TabIndex = 8;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 32);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.textBox1.Location = new System.Drawing.Point(9, 33);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 20);
+            this.textBox1.Size = new System.Drawing.Size(181, 26);
             this.textBox1.TabIndex = 7;
             // 
             // buttonLimpiar
             // 
-            this.buttonLimpiar.Location = new System.Drawing.Point(828, 80);
+            this.buttonLimpiar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.buttonLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLimpiar.Location = new System.Drawing.Point(815, 77);
             this.buttonLimpiar.Name = "buttonLimpiar";
-            this.buttonLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.buttonLimpiar.Size = new System.Drawing.Size(75, 29);
             this.buttonLimpiar.TabIndex = 5;
             this.buttonLimpiar.Text = "Limpiar";
-            this.buttonLimpiar.UseVisualStyleBackColor = true;
+            this.buttonLimpiar.UseVisualStyleBackColor = false;
             // 
             // buttonBuscar
             // 
-            this.buttonBuscar.Location = new System.Drawing.Point(828, 30);
+            this.buttonBuscar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.buttonBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBuscar.Location = new System.Drawing.Point(815, 32);
             this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(75, 23);
+            this.buttonBuscar.Size = new System.Drawing.Size(75, 28);
             this.buttonBuscar.TabIndex = 4;
             this.buttonBuscar.Text = "Buscar";
-            this.buttonBuscar.UseVisualStyleBackColor = true;
+            this.buttonBuscar.UseVisualStyleBackColor = false;
             // 
             // labelEstatus
             // 
             this.labelEstatus.AutoSize = true;
-            this.labelEstatus.Location = new System.Drawing.Point(689, 16);
+            this.labelEstatus.Location = new System.Drawing.Point(688, 15);
             this.labelEstatus.Name = "labelEstatus";
-            this.labelEstatus.Size = new System.Drawing.Size(42, 13);
+            this.labelEstatus.Size = new System.Drawing.Size(55, 17);
             this.labelEstatus.TabIndex = 3;
             this.labelEstatus.Text = "Estatus";
             // 
             // labelClasificacion
             // 
             this.labelClasificacion.AutoSize = true;
-            this.labelClasificacion.Location = new System.Drawing.Point(495, 16);
+            this.labelClasificacion.Location = new System.Drawing.Point(495, 15);
             this.labelClasificacion.Name = "labelClasificacion";
-            this.labelClasificacion.Size = new System.Drawing.Size(66, 13);
+            this.labelClasificacion.Size = new System.Drawing.Size(86, 17);
             this.labelClasificacion.TabIndex = 2;
             this.labelClasificacion.Text = "Clasificación";
             // 
             // labelPeriodo
             // 
             this.labelPeriodo.AutoSize = true;
-            this.labelPeriodo.Location = new System.Drawing.Point(21, 55);
+            this.labelPeriodo.Location = new System.Drawing.Point(9, 61);
             this.labelPeriodo.Name = "labelPeriodo";
-            this.labelPeriodo.Size = new System.Drawing.Size(107, 13);
+            this.labelPeriodo.Size = new System.Drawing.Size(141, 17);
             this.labelPeriodo.TabIndex = 1;
             this.labelPeriodo.Text = "Periodo de ejecución";
             // 
             // labelUltimasEjec
             // 
             this.labelUltimasEjec.AutoSize = true;
-            this.labelUltimasEjec.Location = new System.Drawing.Point(227, 35);
+            this.labelUltimasEjec.Location = new System.Drawing.Point(219, 37);
             this.labelUltimasEjec.Name = "labelUltimasEjec";
-            this.labelUltimasEjec.Size = new System.Drawing.Size(44, 13);
+            this.labelUltimasEjec.Size = new System.Drawing.Size(58, 17);
             this.labelUltimasEjec.TabIndex = 1;
             this.labelUltimasEjec.Text = "Ultimas:";
             // 
             // labelNombre
             // 
             this.labelNombre.AutoSize = true;
-            this.labelNombre.Location = new System.Drawing.Point(75, 16);
+            this.labelNombre.Location = new System.Drawing.Point(70, 16);
             this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(44, 13);
+            this.labelNombre.Size = new System.Drawing.Size(58, 17);
             this.labelNombre.TabIndex = 0;
             this.labelNombre.Text = "Nombre";
             // 
@@ -299,12 +331,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(945, 560);
             this.Controls.Add(this.groupBoxHistorico);
             this.Controls.Add(this.administrar);
             this.Controls.Add(this.ejecutarCadenas);
             this.Controls.Add(this.programarCadenas);
             this.Controls.Add(this.crearCadenas);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "VentanaPrincipal";
             this.Text = "Process Management  Console";
             this.groupBoxHistorico.ResumeLayout(false);

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormPruebasButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPruebasButton.Designer.cs">
+      <DependentUpon>FormPruebasButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Clasificación de procesos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,15 @@
       <DependentUpon>VentanaAdministracionUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Usuario.cs" />
+    <Compile Include="Presentacion\Seleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Seleccion.Designer.cs">
+      <DependentUpon>Seleccion.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormPruebasButton.resx">
+      <DependentUpon>FormPruebasButton.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Clasificación de procesos.resx">
       <DependentUpon>Clasificación de procesos.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\VentanaAdministracionUsuarios.resx">
       <DependentUpon>VentanaAdministracionUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Seleccion.resx">
+      <DependentUpon>Seleccion.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

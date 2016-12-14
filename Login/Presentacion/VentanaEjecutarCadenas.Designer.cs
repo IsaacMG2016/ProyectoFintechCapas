@@ -74,8 +74,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.buttonEjecutar);
             this.splitContainer1.Panel2.Controls.Add(this.groupBoxParametros);
             this.splitContainer1.Panel2.Controls.Add(this.groupBoxSeleccionado);
-            this.splitContainer1.Size = new System.Drawing.Size(764, 484);
-            this.splitContainer1.SplitterDistance = 254;
+            this.splitContainer1.Size = new System.Drawing.Size(1071, 526);
+            this.splitContainer1.SplitterDistance = 326;
             this.splitContainer1.TabIndex = 1;
             // 
             // tableLayoutPanelMenuEjec
@@ -94,7 +94,7 @@
             this.tableLayoutPanelMenuEjec.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.54967F));
             this.tableLayoutPanelMenuEjec.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.45033F));
             this.tableLayoutPanelMenuEjec.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 201F));
-            this.tableLayoutPanelMenuEjec.Size = new System.Drawing.Size(248, 481);
+            this.tableLayoutPanelMenuEjec.Size = new System.Drawing.Size(245, 489);
             this.tableLayoutPanelMenuEjec.TabIndex = 0;
             // 
             // groupBoxBusqueda
@@ -102,32 +102,37 @@
             this.groupBoxBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxBusqueda.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxBusqueda.Controls.Add(this.buttonBuscar);
             this.groupBoxBusqueda.Controls.Add(this.textBoxBuscar);
             this.groupBoxBusqueda.Controls.Add(this.labelBuscar);
+            this.groupBoxBusqueda.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBoxBusqueda.Location = new System.Drawing.Point(3, 3);
             this.groupBoxBusqueda.Name = "groupBoxBusqueda";
-            this.groupBoxBusqueda.Size = new System.Drawing.Size(242, 43);
+            this.groupBoxBusqueda.Size = new System.Drawing.Size(239, 44);
             this.groupBoxBusqueda.TabIndex = 0;
             this.groupBoxBusqueda.TabStop = false;
             this.groupBoxBusqueda.Text = "Busqueda";
             // 
             // buttonBuscar
             // 
+            this.buttonBuscar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.buttonBuscar.Enabled = false;
+            this.buttonBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBuscar.Image = ((System.Drawing.Image)(resources.GetObject("buttonBuscar.Image")));
             this.buttonBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonBuscar.Location = new System.Drawing.Point(211, 15);
+            this.buttonBuscar.Location = new System.Drawing.Point(209, 17);
             this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(25, 25);
+            this.buttonBuscar.Size = new System.Drawing.Size(28, 25);
             this.buttonBuscar.TabIndex = 2;
-            this.buttonBuscar.UseVisualStyleBackColor = true;
+            this.buttonBuscar.UseVisualStyleBackColor = false;
             // 
             // textBoxBuscar
             // 
+            this.textBoxBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.textBoxBuscar.Location = new System.Drawing.Point(44, 18);
             this.textBoxBuscar.Name = "textBoxBuscar";
-            this.textBoxBuscar.Size = new System.Drawing.Size(161, 20);
+            this.textBoxBuscar.Size = new System.Drawing.Size(161, 23);
             this.textBoxBuscar.TabIndex = 1;
             // 
             // labelBuscar
@@ -144,10 +149,12 @@
             this.groupBoxClasificados.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxClasificados.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxClasificados.Controls.Add(this.treeViewClasificados);
-            this.groupBoxClasificados.Location = new System.Drawing.Point(3, 52);
+            this.groupBoxClasificados.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBoxClasificados.Location = new System.Drawing.Point(3, 53);
             this.groupBoxClasificados.Name = "groupBoxClasificados";
-            this.groupBoxClasificados.Size = new System.Drawing.Size(242, 224);
+            this.groupBoxClasificados.Size = new System.Drawing.Size(239, 231);
             this.groupBoxClasificados.TabIndex = 1;
             this.groupBoxClasificados.TabStop = false;
             this.groupBoxClasificados.Text = "Clasificados";
@@ -157,7 +164,7 @@
             this.treeViewClasificados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeViewClasificados.Location = new System.Drawing.Point(3, 16);
             this.treeViewClasificados.Name = "treeViewClasificados";
-            this.treeViewClasificados.Size = new System.Drawing.Size(236, 205);
+            this.treeViewClasificados.Size = new System.Drawing.Size(233, 212);
             this.treeViewClasificados.TabIndex = 0;
             // 
             // groupBoxProcesos
@@ -165,10 +172,13 @@
             this.groupBoxProcesos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxProcesos.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxProcesos.Controls.Add(this.listBoxProcesos);
-            this.groupBoxProcesos.Location = new System.Drawing.Point(3, 282);
+            this.groupBoxProcesos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.groupBoxProcesos.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBoxProcesos.Location = new System.Drawing.Point(3, 290);
             this.groupBoxProcesos.Name = "groupBoxProcesos";
-            this.groupBoxProcesos.Size = new System.Drawing.Size(242, 196);
+            this.groupBoxProcesos.Size = new System.Drawing.Size(239, 196);
             this.groupBoxProcesos.TabIndex = 2;
             this.groupBoxProcesos.TabStop = false;
             this.groupBoxProcesos.Text = "Procesos";
@@ -179,32 +189,39 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBoxProcesos.FormattingEnabled = true;
+            this.listBoxProcesos.ItemHeight = 17;
             this.listBoxProcesos.Location = new System.Drawing.Point(3, 19);
             this.listBoxProcesos.Name = "listBoxProcesos";
-            this.listBoxProcesos.Size = new System.Drawing.Size(236, 160);
+            this.listBoxProcesos.Size = new System.Drawing.Size(329, 157);
             this.listBoxProcesos.TabIndex = 0;
             // 
             // buttonEjecutar
             // 
+            this.buttonEjecutar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.buttonEjecutar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonEjecutar.Enabled = false;
-            this.buttonEjecutar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEjecutar.Location = new System.Drawing.Point(0, 445);
+            this.buttonEjecutar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEjecutar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEjecutar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonEjecutar.Location = new System.Drawing.Point(0, 487);
             this.buttonEjecutar.Name = "buttonEjecutar";
-            this.buttonEjecutar.Size = new System.Drawing.Size(506, 39);
+            this.buttonEjecutar.Size = new System.Drawing.Size(741, 39);
             this.buttonEjecutar.TabIndex = 2;
             this.buttonEjecutar.Text = "Ejecutar";
-            this.buttonEjecutar.UseVisualStyleBackColor = true;
+            this.buttonEjecutar.UseVisualStyleBackColor = false;
             // 
             // groupBoxParametros
             // 
             this.groupBoxParametros.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxParametros.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxParametros.Controls.Add(this.panelParametros);
+            this.groupBoxParametros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.groupBoxParametros.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBoxParametros.Location = new System.Drawing.Point(3, 176);
             this.groupBoxParametros.Name = "groupBoxParametros";
-            this.groupBoxParametros.Size = new System.Drawing.Size(500, 263);
+            this.groupBoxParametros.Size = new System.Drawing.Size(731, 271);
             this.groupBoxParametros.TabIndex = 1;
             this.groupBoxParametros.TabStop = false;
             this.groupBoxParametros.Text = "Parámetros de ejecución";
@@ -212,20 +229,23 @@
             // panelParametros
             // 
             this.panelParametros.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelParametros.Location = new System.Drawing.Point(3, 16);
+            this.panelParametros.Location = new System.Drawing.Point(3, 19);
             this.panelParametros.Name = "panelParametros";
-            this.panelParametros.Size = new System.Drawing.Size(494, 244);
+            this.panelParametros.Size = new System.Drawing.Size(725, 249);
             this.panelParametros.TabIndex = 0;
             // 
             // groupBoxSeleccionado
             // 
             this.groupBoxSeleccionado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxSeleccionado.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxSeleccionado.Controls.Add(this.textBoxNombre);
             this.groupBoxSeleccionado.Controls.Add(this.textBoxDescripcion);
+            this.groupBoxSeleccionado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.groupBoxSeleccionado.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBoxSeleccionado.Location = new System.Drawing.Point(3, 6);
             this.groupBoxSeleccionado.Name = "groupBoxSeleccionado";
-            this.groupBoxSeleccionado.Size = new System.Drawing.Size(500, 164);
+            this.groupBoxSeleccionado.Size = new System.Drawing.Size(731, 164);
             this.groupBoxSeleccionado.TabIndex = 0;
             this.groupBoxSeleccionado.TabStop = false;
             this.groupBoxSeleccionado.Text = "Informacion del proceso";
@@ -236,7 +256,7 @@
             this.textBoxNombre.Location = new System.Drawing.Point(161, 14);
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.ReadOnly = true;
-            this.textBoxNombre.Size = new System.Drawing.Size(190, 20);
+            this.textBoxNombre.Size = new System.Drawing.Size(190, 23);
             this.textBoxNombre.TabIndex = 2;
             this.textBoxNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -249,16 +269,21 @@
             this.textBoxDescripcion.Multiline = true;
             this.textBoxDescripcion.Name = "textBoxDescripcion";
             this.textBoxDescripcion.ReadOnly = true;
-            this.textBoxDescripcion.Size = new System.Drawing.Size(488, 105);
+            this.textBoxDescripcion.Size = new System.Drawing.Size(702, 105);
             this.textBoxDescripcion.TabIndex = 1;
             // 
             // VentanaEjecutarCadenas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(764, 484);
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(1071, 526);
             this.Controls.Add(this.splitContainer1);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "VentanaEjecutarCadenas";
             this.Text = "Ejecutar Cadenas";
             this.splitContainer1.Panel1.ResumeLayout(false);
