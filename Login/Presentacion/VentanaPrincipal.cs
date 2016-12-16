@@ -17,12 +17,14 @@ namespace Login
         public VentanaPrincipal()
         {
             InitializeComponent();
+            //control = new ControlVentanaPrincipal();
         }
 
         private void crearCadenas_Click(object sender, EventArgs e)
         {
             control = new ControlVentanaPrincipal();
             control.crearCadenas();
+
         }
 
         private void programarCadenas_Click(object sender, EventArgs e)

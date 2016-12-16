@@ -122,6 +122,7 @@
             this.buttonBuscar.Size = new System.Drawing.Size(25, 25);
             this.buttonBuscar.TabIndex = 2;
             this.buttonBuscar.UseVisualStyleBackColor = true;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
             // 
             // textBoxBuscar
             // 
@@ -159,6 +160,7 @@
             this.treeViewClasificados.Name = "treeViewClasificados";
             this.treeViewClasificados.Size = new System.Drawing.Size(236, 205);
             this.treeViewClasificados.TabIndex = 0;
+            this.treeViewClasificados.DoubleClick += new System.EventHandler(this.treeViewClasificados_DoubleClick);
             // 
             // groupBoxProcesos
             // 
@@ -183,6 +185,7 @@
             this.listBoxProcesos.Name = "listBoxProcesos";
             this.listBoxProcesos.Size = new System.Drawing.Size(236, 160);
             this.listBoxProcesos.TabIndex = 0;
+            this.listBoxProcesos.DoubleClick += new System.EventHandler(this.listBoxProcesos_DoubleClick);
             // 
             // buttonEjecutar
             // 
