@@ -53,13 +53,20 @@
             this.mesLabel = new System.Windows.Forms.Label();
             this.FechaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.FechaLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.DiasSemanaGroupBox.SuspendLayout();
             this.FechaHoraGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // salir
             // 
-            this.salir.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.salir.BackColor = System.Drawing.Color.Transparent;
+            this.salir.BackgroundImage = global::Login.Properties.Resources.botonSobre_6;
+            this.salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.salir.FlatAppearance.BorderSize = 0;
+            this.salir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.salir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salir.ForeColor = System.Drawing.SystemColors.HotTrack;
@@ -73,7 +80,12 @@
             // 
             // aceptar
             // 
-            this.aceptar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.aceptar.BackColor = System.Drawing.Color.Transparent;
+            this.aceptar.BackgroundImage = global::Login.Properties.Resources.botonSobre_6;
+            this.aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.aceptar.FlatAppearance.BorderSize = 0;
+            this.aceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.aceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aceptar.ForeColor = System.Drawing.SystemColors.HotTrack;
@@ -107,7 +119,12 @@
             // 
             // seleccionaCadenaButton
             // 
-            this.seleccionaCadenaButton.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.seleccionaCadenaButton.BackColor = System.Drawing.Color.Transparent;
+            this.seleccionaCadenaButton.BackgroundImage = global::Login.Properties.Resources.botonSobre_6;
+            this.seleccionaCadenaButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.seleccionaCadenaButton.FlatAppearance.BorderSize = 0;
+            this.seleccionaCadenaButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.seleccionaCadenaButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.seleccionaCadenaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.seleccionaCadenaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seleccionaCadenaButton.ForeColor = System.Drawing.SystemColors.HotTrack;
@@ -122,6 +139,7 @@
             // PeriodoLabel
             // 
             this.PeriodoLabel.AutoSize = true;
+            this.PeriodoLabel.BackColor = System.Drawing.Color.Transparent;
             this.PeriodoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PeriodoLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.PeriodoLabel.Location = new System.Drawing.Point(54, 81);
@@ -341,14 +359,26 @@
             this.FechaLabel.TabIndex = 0;
             this.FechaLabel.Text = "Fecha";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Login.Properties.Resources.logoFintechSuperior;
+            this.pictureBox1.Location = new System.Drawing.Point(619, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(142, 76);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // VentanaProgramarCadenas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BackgroundImage = global::Login.Properties.Resources.logotipofintechAlto;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(773, 435);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.FechaHoraGroupBox);
             this.Controls.Add(this.DiasSemanaGroupBox);
             this.Controls.Add(this.periodoComboBox);
@@ -368,6 +398,7 @@
             this.DiasSemanaGroupBox.PerformLayout();
             this.FechaHoraGroupBox.ResumeLayout(false);
             this.FechaHoraGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -399,5 +430,6 @@
         private System.Windows.Forms.Label diasMesLabel;
         private System.Windows.Forms.TextBox horaTextBox;
         private System.Windows.Forms.Label horaLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

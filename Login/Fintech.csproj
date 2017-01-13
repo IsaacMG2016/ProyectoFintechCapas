@@ -131,6 +131,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Presentacion\VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
@@ -159,6 +160,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logotipofintechAlto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoFintechSuperior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonNormal_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonSobre_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonClic_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logotipofintechBajo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logotipofintechMedio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonNormal_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonClic_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonSobre_9.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

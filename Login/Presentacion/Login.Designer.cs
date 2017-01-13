@@ -43,37 +43,51 @@
             // 
             // aceptar
             // 
-            this.aceptar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.aceptar.BackColor = System.Drawing.Color.Transparent;
+            this.aceptar.BackgroundImage = global::Login.Properties.Resources.botonSobre_6;
+            this.aceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.aceptar.FlatAppearance.BorderSize = 0;
+            this.aceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.aceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aceptar.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.aceptar.Location = new System.Drawing.Point(255, 169);
+            this.aceptar.Location = new System.Drawing.Point(278, 175);
             this.aceptar.Name = "aceptar";
             this.aceptar.Size = new System.Drawing.Size(111, 38);
             this.aceptar.TabIndex = 0;
             this.aceptar.Text = "Aceptar";
             this.aceptar.UseVisualStyleBackColor = false;
             this.aceptar.Click += new System.EventHandler(this.aceptar_Click);
+            this.aceptar.MouseLeave += new System.EventHandler(this.aceptar_MouseLeave);
+            this.aceptar.MouseHover += new System.EventHandler(this.aceptar_MouseHover);
             // 
             // salir
             // 
-            this.salir.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.salir.BackColor = System.Drawing.Color.Transparent;
+            this.salir.BackgroundImage = global::Login.Properties.Resources.botonSobre_6;
+            this.salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.salir.FlatAppearance.BorderSize = 0;
+            this.salir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.salir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salir.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.salir.Location = new System.Drawing.Point(387, 169);
+            this.salir.Location = new System.Drawing.Point(400, 175);
             this.salir.Name = "salir";
             this.salir.Size = new System.Drawing.Size(111, 38);
             this.salir.TabIndex = 1;
             this.salir.Text = "Salir";
             this.salir.UseVisualStyleBackColor = false;
             this.salir.Click += new System.EventHandler(this.salir_Click);
+            this.salir.MouseLeave += new System.EventHandler(this.salir_MouseLeave);
+            this.salir.MouseHover += new System.EventHandler(this.salir_MouseHover);
             // 
             // imagen
             // 
-            this.imagen.BackColor = System.Drawing.SystemColors.Control;
-            this.imagen.Image = ((System.Drawing.Image)(resources.GetObject("imagen.Image")));
-            this.imagen.Location = new System.Drawing.Point(24, 12);
+            this.imagen.BackColor = System.Drawing.Color.Transparent;
+            this.imagen.Image = global::Login.Properties.Resources.user_admin;
+            this.imagen.Location = new System.Drawing.Point(24, 19);
             this.imagen.Name = "imagen";
             this.imagen.Size = new System.Drawing.Size(148, 161);
             this.imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -156,8 +170,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BackgroundImage = global::Login.Properties.Resources.logotipofintechAlto;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(523, 225);
             this.Controls.Add(this.registrarUsuarioLinkLabel);
             this.Controls.Add(this.contraseñaTextBox);

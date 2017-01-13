@@ -15,32 +15,47 @@ namespace Login
         public FormPruebasButton()
         {
             InitializeComponent();
-
-            myButtonObject myButton = new myButtonObject();
-            EventHandler myHandler = new EventHandler(myButton_Click);
-            myButton.Click += myHandler;
-            myButton.Location = new System.Drawing.Point(20, 20);
-            myButton.Size = new System.Drawing.Size(101, 101);
-            this.Controls.Add(myButton);
         }
 
-        public class myButtonObject : UserControl
+        private void button1_MouseHover(object sender, EventArgs e)
         {
-            // Draw the new button.
-            protected override void OnPaint(PaintEventArgs e)
-            {
-                Graphics graphics = e.Graphics;
-                Pen myPen = new Pen(Color.Black);
-                // Draw the button in the form of a circle
-                graphics.DrawEllipse(myPen, 0, 0, 100, 100);
-                myPen.Dispose();
-            }
+            button1.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonNormal_6);
+            button1.Refresh();
         }
 
-        // Handler for the click message.
-        void myButton_Click(Object sender, System.EventArgs e)
+        private void button1_MouseLeave(object sender, EventArgs e)
         {
-            MessageBox.Show("Click");
+            button1.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonSobre_6);
+            button1.Refresh();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            button1.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonClic_6);
+            button1.Refresh();
+            System.Threading.Thread.Sleep(80);
+            MessageBox.Show("ACEPTAR", "aceptar");
+        }
+
+        private void button2_MouseHover(object sender, EventArgs e)
+        {
+            button2.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonNormal_9);
+            button2.Refresh();
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            button2.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonSobre_9);
+            button2.Refresh();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            button2.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonClic_9);
+            button2.Refresh();
+            System.Threading.Thread.Sleep(80);
+            FormPruebasButton.ActiveForm.Close();
+
         }
     }
 }
