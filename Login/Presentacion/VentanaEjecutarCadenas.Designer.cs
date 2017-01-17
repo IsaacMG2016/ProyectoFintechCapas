@@ -94,7 +94,7 @@
             this.tableLayoutPanelMenuEjec.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.54967F));
             this.tableLayoutPanelMenuEjec.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.45033F));
             this.tableLayoutPanelMenuEjec.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 201F));
-            this.tableLayoutPanelMenuEjec.Size = new System.Drawing.Size(245, 489);
+            this.tableLayoutPanelMenuEjec.Size = new System.Drawing.Size(320, 520);
             this.tableLayoutPanelMenuEjec.TabIndex = 0;
             // 
             // groupBoxBusqueda
@@ -109,7 +109,7 @@
             this.groupBoxBusqueda.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBoxBusqueda.Location = new System.Drawing.Point(3, 3);
             this.groupBoxBusqueda.Name = "groupBoxBusqueda";
-            this.groupBoxBusqueda.Size = new System.Drawing.Size(239, 44);
+            this.groupBoxBusqueda.Size = new System.Drawing.Size(314, 49);
             this.groupBoxBusqueda.TabIndex = 0;
             this.groupBoxBusqueda.TabStop = false;
             this.groupBoxBusqueda.Text = "Busqueda";
@@ -152,9 +152,9 @@
             this.groupBoxClasificados.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxClasificados.Controls.Add(this.treeViewClasificados);
             this.groupBoxClasificados.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBoxClasificados.Location = new System.Drawing.Point(3, 53);
+            this.groupBoxClasificados.Location = new System.Drawing.Point(3, 58);
             this.groupBoxClasificados.Name = "groupBoxClasificados";
-            this.groupBoxClasificados.Size = new System.Drawing.Size(239, 231);
+            this.groupBoxClasificados.Size = new System.Drawing.Size(314, 257);
             this.groupBoxClasificados.TabIndex = 1;
             this.groupBoxClasificados.TabStop = false;
             this.groupBoxClasificados.Text = "Clasificados";
@@ -164,7 +164,7 @@
             this.treeViewClasificados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeViewClasificados.Location = new System.Drawing.Point(3, 16);
             this.treeViewClasificados.Name = "treeViewClasificados";
-            this.treeViewClasificados.Size = new System.Drawing.Size(233, 212);
+            this.treeViewClasificados.Size = new System.Drawing.Size(308, 238);
             this.treeViewClasificados.TabIndex = 0;
             // 
             // groupBoxProcesos
@@ -176,9 +176,9 @@
             this.groupBoxProcesos.Controls.Add(this.listBoxProcesos);
             this.groupBoxProcesos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.groupBoxProcesos.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBoxProcesos.Location = new System.Drawing.Point(3, 290);
+            this.groupBoxProcesos.Location = new System.Drawing.Point(3, 321);
             this.groupBoxProcesos.Name = "groupBoxProcesos";
-            this.groupBoxProcesos.Size = new System.Drawing.Size(239, 196);
+            this.groupBoxProcesos.Size = new System.Drawing.Size(314, 196);
             this.groupBoxProcesos.TabIndex = 2;
             this.groupBoxProcesos.TabStop = false;
             this.groupBoxProcesos.Text = "Procesos";
@@ -192,7 +192,7 @@
             this.listBoxProcesos.ItemHeight = 17;
             this.listBoxProcesos.Location = new System.Drawing.Point(3, 19);
             this.listBoxProcesos.Name = "listBoxProcesos";
-            this.listBoxProcesos.Size = new System.Drawing.Size(329, 157);
+            this.listBoxProcesos.Size = new System.Drawing.Size(404, 157);
             this.listBoxProcesos.TabIndex = 0;
             // 
             // buttonEjecutar

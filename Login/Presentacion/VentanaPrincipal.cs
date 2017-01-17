@@ -17,6 +17,7 @@ namespace Login
         public VentanaPrincipal()
         {
             InitializeComponent();
+            mostrarUltimasEjecuciones();
             //control = new ControlVentanaPrincipal();
         }
 
@@ -43,6 +44,12 @@ namespace Login
         {
             control = new ControlVentanaPrincipal();
             control.administrarUsuarios();
+        }
+
+        private void mostrarUltimasEjecuciones()
+        {
+            control = new ControlVentanaPrincipal();
+            historicoDataGridView.DataSource =  control.consultarUltimasEjecuciones();
         }
     }
 }

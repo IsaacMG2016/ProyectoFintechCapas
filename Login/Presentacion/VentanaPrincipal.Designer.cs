@@ -145,7 +145,7 @@
             this.historicoDataGridView.Location = new System.Drawing.Point(6, 144);
             this.historicoDataGridView.Name = "historicoDataGridView";
             this.historicoDataGridView.ReadOnly = true;
-            this.historicoDataGridView.Size = new System.Drawing.Size(909, 274);
+            this.historicoDataGridView.Size = new System.Drawing.Size(909, 286);
             this.historicoDataGridView.TabIndex = 2;
             // 
             // groupBoxBusqueda
@@ -219,6 +219,7 @@
             // 
             // dateTimePickerFin
             // 
+            this.dateTimePickerFin.Checked = false;
             this.dateTimePickerFin.Location = new System.Drawing.Point(247, 83);
             this.dateTimePickerFin.Name = "dateTimePickerFin";
             this.dateTimePickerFin.ShowCheckBox = true;
@@ -227,6 +228,7 @@
             // 
             // dateTimePickerInicio
             // 
+            this.dateTimePickerInicio.Checked = false;
             this.dateTimePickerInicio.Location = new System.Drawing.Point(32, 83);
             this.dateTimePickerInicio.Name = "dateTimePickerInicio";
             this.dateTimePickerInicio.ShowCheckBox = true;
