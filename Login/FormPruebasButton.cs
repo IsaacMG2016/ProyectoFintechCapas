@@ -39,19 +39,19 @@ namespace Login
 
         private void button2_MouseHover(object sender, EventArgs e)
         {
-            button2.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonNormal_9);
+            button2.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonNormal_6);
             button2.Refresh();
         }
 
         private void button2_MouseLeave(object sender, EventArgs e)
         {
-            button2.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonSobre_9);
+            button2.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonSobre_6);
             button2.Refresh();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            button2.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonClic_9);
+            button2.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonClic_6);
             button2.Refresh();
             System.Threading.Thread.Sleep(80);
             FormPruebasButton.ActiveForm.Close();

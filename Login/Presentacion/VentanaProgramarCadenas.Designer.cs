@@ -70,13 +70,15 @@
             this.salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salir.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.salir.Location = new System.Drawing.Point(657, 307);
+            this.salir.Location = new System.Drawing.Point(657, 366);
             this.salir.Name = "salir";
-            this.salir.Size = new System.Drawing.Size(105, 104);
+            this.salir.Size = new System.Drawing.Size(105, 45);
             this.salir.TabIndex = 0;
             this.salir.Text = "Salir";
             this.salir.UseVisualStyleBackColor = false;
             this.salir.Click += new System.EventHandler(this.salir_Click);
+            this.salir.MouseLeave += new System.EventHandler(this.salir_MouseLeave);
+            this.salir.MouseHover += new System.EventHandler(this.salir_MouseHover);
             // 
             // aceptar
             // 
@@ -89,12 +91,15 @@
             this.aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.aceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aceptar.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.aceptar.Location = new System.Drawing.Point(537, 307);
+            this.aceptar.Location = new System.Drawing.Point(537, 366);
             this.aceptar.Name = "aceptar";
-            this.aceptar.Size = new System.Drawing.Size(105, 104);
+            this.aceptar.Size = new System.Drawing.Size(105, 45);
             this.aceptar.TabIndex = 1;
             this.aceptar.Text = "Aceptar";
             this.aceptar.UseVisualStyleBackColor = false;
+            this.aceptar.Click += new System.EventHandler(this.aceptar_Click);
+            this.aceptar.MouseLeave += new System.EventHandler(this.aceptar_MouseLeave);
+            this.aceptar.MouseHover += new System.EventHandler(this.aceptar_MouseHover);
             // 
             // seleccionaCadenaLabel
             // 
@@ -111,11 +116,14 @@
             // seleccionaCadenaTextBox
             // 
             this.seleccionaCadenaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.seleccionaCadenaTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.seleccionaCadenaTextBox.Location = new System.Drawing.Point(217, 27);
             this.seleccionaCadenaTextBox.Multiline = true;
             this.seleccionaCadenaTextBox.Name = "seleccionaCadenaTextBox";
+            this.seleccionaCadenaTextBox.ReadOnly = true;
             this.seleccionaCadenaTextBox.Size = new System.Drawing.Size(299, 29);
             this.seleccionaCadenaTextBox.TabIndex = 3;
+            this.seleccionaCadenaTextBox.Text = "     ++++ Selecciona Una Cadena ++++";
             // 
             // seleccionaCadenaButton
             // 
@@ -135,6 +143,8 @@
             this.seleccionaCadenaButton.Text = "°°°";
             this.seleccionaCadenaButton.UseVisualStyleBackColor = false;
             this.seleccionaCadenaButton.Click += new System.EventHandler(this.seleccionaCadenaButton_Click);
+            this.seleccionaCadenaButton.MouseLeave += new System.EventHandler(this.seleccionaCadenaButton_MouseLeave);
+            this.seleccionaCadenaButton.MouseHover += new System.EventHandler(this.seleccionaCadenaButton_MouseHover);
             // 
             // PeriodoLabel
             // 
