@@ -12,9 +12,19 @@ namespace Login.Presentacion
 {
     public partial class VentanaEditarUsuario : Form
     {
-        public VentanaEditarUsuario()
+        public VentanaEditarUsuario(string indice)
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
+
+        public void llenaDatos(string id)
+        {
+
         }
     }
 }
