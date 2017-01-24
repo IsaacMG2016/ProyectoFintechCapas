@@ -12,6 +12,8 @@ namespace Login
 {
     public partial class VentanaAdministracionUsuarios : Form
     {
+        ControlVentanaAdministracionUsuarios control;
+
         public VentanaAdministracionUsuarios()
         {
             InitializeComponent();
@@ -20,6 +22,18 @@ namespace Login
         private void salir_Click(object sender, EventArgs e)
         {
             VentanaAdministracionUsuarios.ActiveForm.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            control = new ControlVentanaAdministracionUsuarios();
+            control.administrarProcesos();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            control = new ControlVentanaAdministracionUsuarios();
+            control.administrarUsuarios();
         }
     }
 }
