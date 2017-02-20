@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Login.Negocio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +15,16 @@ namespace Login
             ventana.ShowDialog();
         }
 
+        public void administrarUsuarios()
+        {
+            ControlVentanaAdminUsuarios cvau = new ControlVentanaAdminUsuarios();
+            cvau.inicia();
+        }
+
+        public void administrarProcesos()
+        {
+            ControlVentanaAdminProcesos cvap = new ControlVentanaAdminProcesos();
+            cvap.inicia();
+        }
     }
 }

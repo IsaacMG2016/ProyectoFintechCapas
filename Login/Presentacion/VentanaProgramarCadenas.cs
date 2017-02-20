@@ -13,26 +13,18 @@ namespace Login
     public partial class VentanaProgramarCadenas : Form
     {
         /*Se Modifica la ventana de Programacion de cadenas 
-          Isaac MG 29/Nov/2016
-          version 0.2
+          Isaac MG 12/Ene/2017
+          version 0.3
          */
+
+        public static VentanaProgramarCadenas f1;
+
         public VentanaProgramarCadenas()
         {
             InitializeComponent();
+            VentanaProgramarCadenas.f1 = this;
         }
-
-        private void salir_Click(object sender, EventArgs e)
-        {
-            VentanaProgramarCadenas.ActiveForm.Close();
-        }
-
-        private void seleccionaCadenaButton_Click(object sender, EventArgs e)
-        {
-            Seleccion nuevaSeleccion = new Seleccion();
-            //FormPruebasButton nuevaSeleccion = new FormPruebasButton();
-            nuevaSeleccion.ShowDialog();
-        }
-
+        
         private void periodoComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             string cadena = periodoComboBox.Text;
@@ -72,6 +64,80 @@ namespace Login
 
             }
 
+        }
+
+        /*Controles de comportamineto para los botones
+         ==============================================
+         */
+        private void aceptar_MouseHover(object sender, EventArgs e)
+        {
+            aceptar.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonNormal_6);
+            aceptar.Refresh();
+        }
+
+        private void aceptar_MouseLeave(object sender, EventArgs e)
+        {
+            aceptar.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonSobre_6);
+            aceptar.Refresh();
+        }
+        /* ACEPTAR */
+        private void aceptar_Click(object sender, EventArgs e)
+        {
+            aceptar.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonClic_6);
+            aceptar.Refresh();
+            System.Threading.Thread.Sleep(80);
+
+            /*Aquí va la operacion para guardar la captura de la cadena programada*/
+            VentanaProgramarCadenas.ActiveForm.Close();
+        }
+
+        private void salir_MouseHover(object sender, EventArgs e)
+        {
+            salir.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonNormal_6);
+            salir.Refresh();
+        }
+
+        private void salir_MouseLeave(object sender, EventArgs e)
+        {
+            salir.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonSobre_6);
+            salir.Refresh();
+        }
+
+        /* SALIR */
+        private void salir_Click(object sender, EventArgs e)
+        {
+            salir.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonClic_6);
+            salir.Refresh();
+            System.Threading.Thread.Sleep(80);
+            VentanaProgramarCadenas.ActiveForm.Close();
+        }
+
+        private void seleccionaCadenaButton_MouseHover(object sender, EventArgs e)
+        {
+            seleccionaCadenaButton.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonNormal_6);
+            seleccionaCadenaButton.Refresh();
+        }
+
+        private void seleccionaCadenaButton_MouseLeave(object sender, EventArgs e)
+        {
+            seleccionaCadenaButton.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonSobre_6);
+            seleccionaCadenaButton.Refresh();
+        }
+
+        /* SELECCION DE CADENA */
+        private void seleccionaCadenaButton_Click(object sender, EventArgs e)
+        {
+            seleccionaCadenaButton.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonClic_6);
+            seleccionaCadenaButton.Refresh();
+            System.Threading.Thread.Sleep(80);
+            Seleccion nuevaSeleccion = new Seleccion();
+            nuevaSeleccion.ShowDialog();
+        }
+        /*===========================================*/
+
+        public void cargaCadena(string cadena)
+        {
+            seleccionaCadenaTextBox.Text = cadena;
         }
     }
 }
