@@ -8,27 +8,24 @@ namespace Login
 {
     public class Principal
     {
-        /*YA funciona las pinches mamadas del Irving 
-          Falta que le llame a su chavo el Ruben para que 
-          nos de Visto bueno haber si no lo manda a la verga.*/
+        /* El inicio de la aplicaion */
         public static void Main()
         {
             Principal p = new Principal();
             p.inicia();
         }
 
-        /*Se despliega a la ventana de Inicio de sesión*/
+        /*Se iniciara desplegando la ventana de Inicio de sesión*/
         public void inicia()
         {
-            Login l = new Login();
+            Login l = new Login(this);
             l.ShowDialog();
         }
 
-        public void inicioCorrecto()
+        public void Ventana_Principal()
         {
             ControlVentanaPrincipal ctrlPrincipal = new ControlVentanaPrincipal();
             ctrlPrincipal.inicia();
-
         }
 
         /*Validacion para el incio de sesión FALTA*/

@@ -12,9 +12,17 @@ namespace Login
 {
     public partial class Login : Form
     {
-        public Login()
+        private Principal principal;
+
+        /*public Login()
         {
             InitializeComponent();
+        }*/
+
+        public Login(Principal principal)
+        {
+            InitializeComponent();
+            this.principal = principal;
         }
 
         private void salir_Click(object sender, EventArgs e)
@@ -33,8 +41,11 @@ namespace Login
             aceptar.BackgroundImage = (System.Drawing.Image)(Properties.Resources.botonClic_6);
             aceptar.Refresh();
             System.Threading.Thread.Sleep(80);
-            Principal ventana = new Principal();
-            ventana.inicioCorrecto();
+            /*Principal ventana = new Principal();
+            ventana.Ventana_Principal();*/
+
+            //if (principal.validarUsuario(UsuarioComboBox.SelectedItem.ToString(), contraseñaTextBox.Text))
+                principal.Ventana_Principal();
         }
 
         private void aceptar_MouseHover(object sender, EventArgs e)

@@ -6,58 +6,20 @@ using System.Threading.Tasks;
 
 namespace Login
 {
-    public class Proceso
+    public class Proceso : Encadenamieto
     {
-        private string nombre;
-        private string propietario;
-        private string descripcion;
-        
-        public Proceso(string nombre,string propietario,string descripcion)
+        private Parametro[] parametros;
+
+        public Proceso(string nombre, string descripcion, bool disponible, int categoria, bool bn_parametro, Parametro[] parametros)
+            :base(nombre, descripcion, disponible, categoria, bn_parametro)
         {
-            this.nombre = nombre;
-            this.propietario = propietario;
-            this.descripcion = descripcion;
-            
+            this.Parametros = parametros;
         }
 
-        public string Nombre
+        public Parametro[] Parametros
         {
-            get
-            {
-                return nombre;
-            }
-
-            set
-            {
-                nombre = value;
-            }
+            get{ return parametros; }
+            set{ parametros = value; }
         }
-
-        public string Propietario
-        {
-            get
-            {
-                return propietario;
-            }
-
-            set
-            {
-                propietario = value;
-            }
-        }
-
-        public string Descripcion
-        {
-            get
-            {
-                return descripcion;
-            }
-
-            set
-            {
-                descripcion = value;
-            }
-        }
-
     }
 }

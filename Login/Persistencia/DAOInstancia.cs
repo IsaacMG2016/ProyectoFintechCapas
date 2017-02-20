@@ -1,0 +1,6 @@
+﻿namespace Login
+{
+    class DAOInstancia
+    {
+    }
+}

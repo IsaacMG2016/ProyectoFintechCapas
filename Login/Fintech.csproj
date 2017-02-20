@@ -57,7 +57,20 @@
     <Compile Include="FormPruebasButton.Designer.cs">
       <DependentUpon>FormPruebasButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelo\Encadenamieto.cs" />
+    <Compile Include="Modelo\Monitor.cs" />
+    <Compile Include="Modelo\NodoPanel.cs" />
+    <Compile Include="Modelo\Instancia.cs" />
+    <Compile Include="Modelo\Parametro.cs" />
+    <Compile Include="Negocio\ControlVentanaCategoria.cs" />
+    <Compile Include="Persistencia\Conexion.cs" />
+    <Compile Include="Persistencia\DAOInstancia.cs" />
+    <Compile Include="Persistencia\DAOProceosoCadena.cs" />
+    <Compile Include="Persistencia\DAOParametro.cs" />
+    <Compile Include="Persistencia\DAOCadena.cs" />
+    <Compile Include="Persistencia\DAOCategoria.cs" />
     <Compile Include="Persistencia\DAOMonitor.cs" />
+    <Compile Include="Modelo\Cadena.cs" />
     <Compile Include="Presentacion\Clasificación de procesos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +219,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\botonSobre_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logotipofintechBajochico.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

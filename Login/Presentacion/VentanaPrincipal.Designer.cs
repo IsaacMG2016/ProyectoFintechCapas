@@ -36,15 +36,15 @@
             this.groupBoxHistorico = new System.Windows.Forms.GroupBox();
             this.historicoDataGridView = new System.Windows.Forms.DataGridView();
             this.groupBoxBusqueda = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxEstatus = new System.Windows.Forms.ComboBox();
             this.comboBoxClasificacion = new System.Windows.Forms.ComboBox();
             this.labelPeriodode = new System.Windows.Forms.Label();
             this.labelPeriodoa = new System.Windows.Forms.Label();
             this.dateTimePickerFin = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerInicio = new System.Windows.Forms.DateTimePicker();
             this.labelUltimasF = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxNumEjecuciones = new System.Windows.Forms.TextBox();
+            this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.buttonLimpiar = new System.Windows.Forms.Button();
             this.buttonBuscar = new System.Windows.Forms.Button();
             this.labelEstatus = new System.Windows.Forms.Label();
@@ -139,7 +139,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.historicoDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.historicoDataGridView.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.historicoDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.historicoDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.historicoDataGridView.ColumnHeadersHeight = 40;
             this.historicoDataGridView.Location = new System.Drawing.Point(6, 144);
@@ -152,15 +152,15 @@
             // 
             this.groupBoxBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxBusqueda.Controls.Add(this.comboBox1);
+            this.groupBoxBusqueda.Controls.Add(this.comboBoxEstatus);
             this.groupBoxBusqueda.Controls.Add(this.comboBoxClasificacion);
             this.groupBoxBusqueda.Controls.Add(this.labelPeriodode);
             this.groupBoxBusqueda.Controls.Add(this.labelPeriodoa);
             this.groupBoxBusqueda.Controls.Add(this.dateTimePickerFin);
             this.groupBoxBusqueda.Controls.Add(this.dateTimePickerInicio);
             this.groupBoxBusqueda.Controls.Add(this.labelUltimasF);
-            this.groupBoxBusqueda.Controls.Add(this.textBox2);
-            this.groupBoxBusqueda.Controls.Add(this.textBox1);
+            this.groupBoxBusqueda.Controls.Add(this.textBoxNumEjecuciones);
+            this.groupBoxBusqueda.Controls.Add(this.textBoxNombre);
             this.groupBoxBusqueda.Controls.Add(this.buttonLimpiar);
             this.groupBoxBusqueda.Controls.Add(this.buttonBuscar);
             this.groupBoxBusqueda.Controls.Add(this.labelEstatus);
@@ -177,27 +177,37 @@
             this.groupBoxBusqueda.TabStop = false;
             this.groupBoxBusqueda.Text = "Busqueda";
             // 
-            // comboBox1
+            // comboBoxEstatus
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(659, 32);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 15;
+            this.comboBoxEstatus.BackColor = System.Drawing.Color.White;
+            this.comboBoxEstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEstatus.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBoxEstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.comboBoxEstatus.FormattingEnabled = true;
+            this.comboBoxEstatus.Items.AddRange(new object[] {
+            "Todos",
+            "R",
+            "S",
+            "T"});
+            this.comboBoxEstatus.Location = new System.Drawing.Point(691, 31);
+            this.comboBoxEstatus.Name = "comboBoxEstatus";
+            this.comboBoxEstatus.Size = new System.Drawing.Size(107, 28);
+            this.comboBoxEstatus.TabIndex = 15;
             // 
             // comboBoxClasificacion
             // 
-            this.comboBoxClasificacion.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.comboBoxClasificacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxClasificacion.BackColor = System.Drawing.Color.White;
+            this.comboBoxClasificacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxClasificacion.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.comboBoxClasificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.comboBoxClasificacion.FormattingEnabled = true;
+            this.comboBoxClasificacion.Items.AddRange(new object[] {
+            "hola"});
             this.comboBoxClasificacion.Location = new System.Drawing.Point(452, 32);
             this.comboBoxClasificacion.Name = "comboBoxClasificacion";
-            this.comboBoxClasificacion.Size = new System.Drawing.Size(181, 28);
+            this.comboBoxClasificacion.Size = new System.Drawing.Size(230, 28);
             this.comboBoxClasificacion.TabIndex = 14;
+            this.comboBoxClasificacion.Tag = "";
             // 
             // labelPeriodode
             // 
@@ -220,7 +230,9 @@
             // dateTimePickerFin
             // 
             this.dateTimePickerFin.Checked = false;
+            this.dateTimePickerFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerFin.Location = new System.Drawing.Point(247, 83);
+            this.dateTimePickerFin.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dateTimePickerFin.Name = "dateTimePickerFin";
             this.dateTimePickerFin.ShowCheckBox = true;
             this.dateTimePickerFin.Size = new System.Drawing.Size(185, 23);
@@ -229,7 +241,9 @@
             // dateTimePickerInicio
             // 
             this.dateTimePickerInicio.Checked = false;
+            this.dateTimePickerInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerInicio.Location = new System.Drawing.Point(32, 83);
+            this.dateTimePickerInicio.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dateTimePickerInicio.Name = "dateTimePickerInicio";
             this.dateTimePickerInicio.ShowCheckBox = true;
             this.dateTimePickerInicio.Size = new System.Drawing.Size(184, 23);
@@ -244,21 +258,21 @@
             this.labelUltimasF.TabIndex = 9;
             this.labelUltimasF.Text = "Ejecuciones";
             // 
-            // textBox2
+            // textBoxNumEjecuciones
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.textBox2.Location = new System.Drawing.Point(290, 32);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(41, 26);
-            this.textBox2.TabIndex = 8;
+            this.textBoxNumEjecuciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.textBoxNumEjecuciones.Location = new System.Drawing.Point(290, 32);
+            this.textBoxNumEjecuciones.Name = "textBoxNumEjecuciones";
+            this.textBoxNumEjecuciones.Size = new System.Drawing.Size(41, 26);
+            this.textBoxNumEjecuciones.TabIndex = 8;
             // 
-            // textBox1
+            // textBoxNombre
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.textBox1.Location = new System.Drawing.Point(9, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 26);
-            this.textBox1.TabIndex = 7;
+            this.textBoxNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.textBoxNombre.Location = new System.Drawing.Point(9, 33);
+            this.textBoxNombre.Name = "textBoxNombre";
+            this.textBoxNombre.Size = new System.Drawing.Size(181, 26);
+            this.textBoxNombre.TabIndex = 7;
             // 
             // buttonLimpiar
             // 
@@ -271,6 +285,7 @@
             this.buttonLimpiar.TabIndex = 5;
             this.buttonLimpiar.Text = "Limpiar";
             this.buttonLimpiar.UseVisualStyleBackColor = false;
+            this.buttonLimpiar.Click += new System.EventHandler(this.buttonLimpiar_Click);
             // 
             // buttonBuscar
             // 
@@ -283,6 +298,7 @@
             this.buttonBuscar.TabIndex = 4;
             this.buttonBuscar.Text = "Buscar";
             this.buttonBuscar.UseVisualStyleBackColor = false;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
             // 
             // labelEstatus
             // 
@@ -296,7 +312,7 @@
             // labelClasificacion
             // 
             this.labelClasificacion.AutoSize = true;
-            this.labelClasificacion.Location = new System.Drawing.Point(495, 15);
+            this.labelClasificacion.Location = new System.Drawing.Point(524, 15);
             this.labelClasificacion.Name = "labelClasificacion";
             this.labelClasificacion.Size = new System.Drawing.Size(86, 17);
             this.labelClasificacion.TabIndex = 2;
@@ -333,7 +349,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(945, 560);
@@ -346,6 +362,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "VentanaPrincipal";
             this.Text = "Process Management  Console";
+            this.Load += new System.EventHandler(this.VentanaPrincipal_Load);
             this.groupBoxHistorico.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.historicoDataGridView)).EndInit();
             this.groupBoxBusqueda.ResumeLayout(false);
@@ -363,15 +380,15 @@
         private System.Windows.Forms.GroupBox groupBoxHistorico;
         private System.Windows.Forms.GroupBox groupBoxBusqueda;
         private System.Windows.Forms.DataGridView historicoDataGridView;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxEstatus;
         private System.Windows.Forms.ComboBox comboBoxClasificacion;
         private System.Windows.Forms.Label labelPeriodode;
         private System.Windows.Forms.Label labelPeriodoa;
         private System.Windows.Forms.DateTimePicker dateTimePickerFin;
         private System.Windows.Forms.DateTimePicker dateTimePickerInicio;
         private System.Windows.Forms.Label labelUltimasF;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxNumEjecuciones;
+        private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.Button buttonLimpiar;
         private System.Windows.Forms.Button buttonBuscar;
         private System.Windows.Forms.Label labelEstatus;

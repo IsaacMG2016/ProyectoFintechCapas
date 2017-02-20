@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +11,9 @@ namespace Login
 {
     public class DAOProceso
     {
-        
+        NpgsqlDataAdapter consultadatos;
+        DataTable datosbd;
+
         public Boolean agregarProceso(Proceso proc)
         {
             return true;
@@ -24,5 +29,15 @@ namespace Login
             return null;
         }
 
+        internal DataTable Obten_procesos()
+        {
+            Conexion conn = new Conexion();
+            conn.Abre_conexion();
+
+            string query = "select * from pmc_cat_enc_proceso";
+            datosbd = conn.Ejecutar(query, "pmc_cat_enc_proceso").Tables[0];
+            conn.Cierra_conexion();
+            return datosbd;
+        }
     }
 }
