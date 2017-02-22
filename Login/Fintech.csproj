@@ -56,11 +56,24 @@
     <Compile Include="FormPruebasButton.Designer.cs">
       <DependentUpon>FormPruebasButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelo\Cadena.cs" />
+    <Compile Include="Modelo\Encadenamieto.cs" />
+    <Compile Include="Modelo\Instancia.cs" />
+    <Compile Include="Modelo\Monitor.cs" />
+    <Compile Include="Modelo\NodoPanel.cs" />
+    <Compile Include="Modelo\Parametro.cs" />
     <Compile Include="Negocio\ControlVentanaAdminProcesos.cs" />
     <Compile Include="Negocio\ControlVentanaAdminUsuarios.cs" />
     <Compile Include="Negocio\ControlVentanaAgregarUsuario.cs" />
+    <Compile Include="Negocio\ControlVentanaCategoria.cs" />
     <Compile Include="Negocio\ControlVentanaEditarUsuario.cs" />
+    <Compile Include="Persistencia\Conexion.cs" />
+    <Compile Include="Persistencia\DAOCadena.cs" />
+    <Compile Include="Persistencia\DAOCategoria.cs" />
+    <Compile Include="Persistencia\DAOInstancia.cs" />
     <Compile Include="Persistencia\DAOMonitor.cs" />
+    <Compile Include="Persistencia\DAOParametro.cs" />
+    <Compile Include="Persistencia\DAOProceosoCadena.cs" />
     <Compile Include="Presentacion\Clasificación de procesos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,7 +206,6 @@
     <EmbeddedResource Include="Presentacion\Seleccion.resx">
       <DependentUpon>Seleccion.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

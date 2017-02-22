@@ -13,13 +13,7 @@ namespace Login
     public partial class VentanaPrincipal : Form
     {
         private ControlVentanaPrincipal control;
-
-        /*public VentanaPrincipal()
-        {
-            InitializeComponent();
-            mostrarUltimasEjecuciones();
-            //control = new ControlVentanaPrincipal();
-        }*/
+        
         public class Busqueda
         {
             public string nombre;
@@ -45,7 +39,7 @@ namespace Login
             dateTimePickerInicio.MaxDate = DateTime.Now;
             dateTimePickerFin.MaxDate = DateTime.Now;
             // llenar combox categorias
-            // Agrego la opcion de "Todas"
+            // Agrego la opcion de "Todas" (opcion default)
             DataTable categorias_c = new DataTable();
             categorias_c.Columns.Add("id_categoria", typeof(Int32));
             categorias_c.Columns.Add("nombre", typeof(String));
@@ -54,6 +48,12 @@ namespace Login
             comboBoxClasificacion.DataSource = categorias_c;
             comboBoxClasificacion.ValueMember = "id_categoria";
             comboBoxClasificacion.DisplayMember = "nombre";
+            // Opcion default todos en comoboxstatus
+            //comboBoxEstatus.SelectedItem = 0;
+            comboBoxEstatus.Items.AddRange(new object[] {
+            "Todos", "R", "S", "T"});
+            comboBoxEstatus.SelectedIndex = 0;
+
         }
 
         private void crearCadenas_Click(object sender, EventArgs e)
@@ -85,7 +85,7 @@ namespace Login
             historicoDataGridView.DataSource =  control.consultarUltimasEjecuciones();
         }
 
-        /* Metodos para realizar la busqueda de ejecuciones
+        /* Metodos para realizar la busqueda personalizada de ejecuciones
          * 
          * 
         */
@@ -94,7 +94,7 @@ namespace Login
             Busqueda busqueda = new Busqueda();
             busqueda.nombre = string.IsNullOrEmpty(textBoxNombre.Text)? "": textBoxNombre.Text;
             busqueda.clasificacion = (comboBoxClasificacion.SelectedValue.Equals(0))? "": comboBoxClasificacion.SelectedValue.ToString();
-            busqueda.status = (comboBoxEstatus.SelectedItem.ToString().Equals("Todos"))? "": comboBoxEstatus.SelectedItem.ToString();
+            busqueda.status = (comboBoxEstatus.SelectedIndex.Equals(0))? "": comboBoxEstatus.SelectedItem.ToString();
             if (dateTimePickerInicio.Checked && dateTimePickerFin.Checked)
             {
                 if (dateTimePickerInicio.Value < dateTimePickerFin.Value)

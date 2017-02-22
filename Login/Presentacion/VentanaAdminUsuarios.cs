@@ -31,21 +31,21 @@ namespace Login.Presentacion
 
         public void mostrarUsuarios()
         {
-            DAOUsuario dao = new DAOUsuario();
-            dadapter=dao.recuperaUsuarios();
-            dset = new DataSet();
-            dadapter.Fill(dset);
-            bs = new BindingSource();
-            bs.DataSource = dset.Tables[0].DefaultView;
-            bindingNavigator2.BindingSource = bs;
-            dataGridView2.DataSource = bs;
+            //DAOUsuario dao = new DAOUsuario();
+            //dadapter=dao.recuperaUsuarios();
+            //dset = new DataSet();
+            //dadapter.Fill(dset);
+            //bs = new BindingSource();
+            //bs.DataSource = dset.Tables[0].DefaultView;
+            //bindingNavigator2.BindingSource = bs;
+            //dataGridView2.DataSource = bs;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string indice=dataGridView2.SelectedCells[0].RowIndex.ToString();
+            //string indice=dataGridView2.SelectedCells[0].RowIndex.ToString();
             control = new ControlVentanaAdminUsuarios();
-            control.editarUsuarios(indice);
+            control.editarUsuarios("marcos");
         }
 
         private void button6_Click(object sender, EventArgs e)

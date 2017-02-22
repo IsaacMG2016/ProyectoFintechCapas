@@ -30,13 +30,13 @@ namespace Login.Presentacion
         public void mostrarProcesos()
         {
             DAOProceso dao = new DAOProceso();
-            dadapter = dao.recuperaProcesos();
-            dset = new DataSet();
-            dadapter.Fill(dset);
-            bs = new BindingSource();
-            bs.DataSource = dset.Tables[0].DefaultView;
-            bindingNavigator1.BindingSource = bs;
-            dataGridView1.DataSource = bs;
+            //dadapter = dao.recuperaProcesos();
+            //dset = new DataSet();
+            //dadapter.Fill(dset);
+            //bs = new BindingSource();
+            //bs.DataSource = dset.Tables[0].DefaultView;
+            //bindingNavigator1.BindingSource = bs;
+            //dataGridView1.DataSource = bs;
         }
 
         private void button5_Click(object sender, EventArgs e)

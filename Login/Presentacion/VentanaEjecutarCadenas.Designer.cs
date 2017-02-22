@@ -32,6 +32,7 @@
             this.splitContainerArbolInfo = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanelMenuEjec = new System.Windows.Forms.TableLayoutPanel();
             this.groupBoxBusqueda = new System.Windows.Forms.GroupBox();
+            this.buttonBuscar = new System.Windows.Forms.Button();
             this.textBoxBuscar = new System.Windows.Forms.TextBox();
             this.labelBuscar = new System.Windows.Forms.Label();
             this.groupBoxClasificados = new System.Windows.Forms.GroupBox();
@@ -39,12 +40,11 @@
             this.groupBoxProcesos = new System.Windows.Forms.GroupBox();
             this.treeViewProcesos = new System.Windows.Forms.TreeView();
             this.buttonEjecutar = new System.Windows.Forms.Button();
+            this.groupBoxParametros = new System.Windows.Forms.GroupBox();
+            this.listViewParametros = new System.Windows.Forms.ListView();
             this.groupBoxSeleccionado = new System.Windows.Forms.GroupBox();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.textBoxDescripcion = new System.Windows.Forms.TextBox();
-            this.buttonBuscar = new System.Windows.Forms.Button();
-            this.groupBoxParametros = new System.Windows.Forms.GroupBox();
-            this.listViewParametros = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerArbolInfo)).BeginInit();
             this.splitContainerArbolInfo.Panel1.SuspendLayout();
             this.splitContainerArbolInfo.Panel2.SuspendLayout();
@@ -53,8 +53,8 @@
             this.groupBoxBusqueda.SuspendLayout();
             this.groupBoxClasificados.SuspendLayout();
             this.groupBoxProcesos.SuspendLayout();
-            this.groupBoxSeleccionado.SuspendLayout();
             this.groupBoxParametros.SuspendLayout();
+            this.groupBoxSeleccionado.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainerArbolInfo
@@ -114,6 +114,20 @@
             this.groupBoxBusqueda.TabIndex = 0;
             this.groupBoxBusqueda.TabStop = false;
             this.groupBoxBusqueda.Text = "Busqueda";
+            // 
+            // buttonBuscar
+            // 
+            this.buttonBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonBuscar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.buttonBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBuscar.Image = ((System.Drawing.Image)(resources.GetObject("buttonBuscar.Image")));
+            this.buttonBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBuscar.Location = new System.Drawing.Point(204, 18);
+            this.buttonBuscar.Name = "buttonBuscar";
+            this.buttonBuscar.Size = new System.Drawing.Size(28, 25);
+            this.buttonBuscar.TabIndex = 2;
+            this.buttonBuscar.UseVisualStyleBackColor = false;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
             // 
             // textBoxBuscar
             // 
@@ -189,7 +203,6 @@
             // 
             this.buttonEjecutar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.buttonEjecutar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonEjecutar.Enabled = false;
             this.buttonEjecutar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEjecutar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEjecutar.ForeColor = System.Drawing.SystemColors.HotTrack;
@@ -200,6 +213,40 @@
             this.buttonEjecutar.Text = "Ejecutar";
             this.buttonEjecutar.UseVisualStyleBackColor = false;
             this.buttonEjecutar.Click += new System.EventHandler(this.buttonEjecutar_Click);
+            // 
+            // groupBoxParametros
+            // 
+            this.groupBoxParametros.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxParametros.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxParametros.BackgroundImage = global::Login.Properties.Resources.logotipofintechBajochico;
+            this.groupBoxParametros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBoxParametros.Controls.Add(this.listViewParametros);
+            this.groupBoxParametros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.groupBoxParametros.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBoxParametros.Location = new System.Drawing.Point(3, 176);
+            this.groupBoxParametros.Name = "groupBoxParametros";
+            this.groupBoxParametros.Size = new System.Drawing.Size(552, 271);
+            this.groupBoxParametros.TabIndex = 1;
+            this.groupBoxParametros.TabStop = false;
+            this.groupBoxParametros.Text = "Parámetros de ejecución";
+            // 
+            // listViewParametros
+            // 
+            this.listViewParametros.BackgroundImage = global::Login.Properties.Resources.logotipofintechBajochico;
+            this.listViewParametros.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listViewParametros.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listViewParametros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewParametros.FullRowSelect = true;
+            this.listViewParametros.HideSelection = false;
+            this.listViewParametros.Location = new System.Drawing.Point(3, 19);
+            this.listViewParametros.Name = "listViewParametros";
+            this.listViewParametros.Size = new System.Drawing.Size(546, 249);
+            this.listViewParametros.TabIndex = 0;
+            this.listViewParametros.UseCompatibleStateImageBehavior = false;
+            this.listViewParametros.View = System.Windows.Forms.View.SmallIcon;
+            this.listViewParametros.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listViewParametros_MouseDoubleClick);
             // 
             // groupBoxSeleccionado
             // 
@@ -242,53 +289,6 @@
             this.textBoxDescripcion.Size = new System.Drawing.Size(541, 105);
             this.textBoxDescripcion.TabIndex = 1;
             // 
-            // buttonBuscar
-            // 
-            this.buttonBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonBuscar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.buttonBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBuscar.Image = ((System.Drawing.Image)(resources.GetObject("buttonBuscar.Image")));
-            this.buttonBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonBuscar.Location = new System.Drawing.Point(204, 18);
-            this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(28, 25);
-            this.buttonBuscar.TabIndex = 2;
-            this.buttonBuscar.UseVisualStyleBackColor = false;
-            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
-            // 
-            // groupBoxParametros
-            // 
-            this.groupBoxParametros.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxParametros.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxParametros.BackgroundImage = global::Login.Properties.Resources.logotipofintechBajochico;
-            this.groupBoxParametros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBoxParametros.Controls.Add(this.listViewParametros);
-            this.groupBoxParametros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.groupBoxParametros.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBoxParametros.Location = new System.Drawing.Point(3, 176);
-            this.groupBoxParametros.Name = "groupBoxParametros";
-            this.groupBoxParametros.Size = new System.Drawing.Size(552, 271);
-            this.groupBoxParametros.TabIndex = 1;
-            this.groupBoxParametros.TabStop = false;
-            this.groupBoxParametros.Text = "Parámetros de ejecución";
-            // 
-            // listViewParametros
-            // 
-            this.listViewParametros.BackgroundImage = global::Login.Properties.Resources.logotipofintechBajochico;
-            this.listViewParametros.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listViewParametros.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listViewParametros.FullRowSelect = true;
-            this.listViewParametros.HideSelection = false;
-            this.listViewParametros.Location = new System.Drawing.Point(3, 19);
-            this.listViewParametros.Name = "listViewParametros";
-            this.listViewParametros.Size = new System.Drawing.Size(546, 249);
-            this.listViewParametros.TabIndex = 0;
-            this.listViewParametros.UseCompatibleStateImageBehavior = false;
-            this.listViewParametros.View = System.Windows.Forms.View.SmallIcon;
-            this.listViewParametros.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listViewParametros_MouseDoubleClick);
-            // 
             // VentanaEjecutarCadenas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -311,9 +311,9 @@
             this.groupBoxBusqueda.PerformLayout();
             this.groupBoxClasificados.ResumeLayout(false);
             this.groupBoxProcesos.ResumeLayout(false);
+            this.groupBoxParametros.ResumeLayout(false);
             this.groupBoxSeleccionado.ResumeLayout(false);
             this.groupBoxSeleccionado.PerformLayout();
-            this.groupBoxParametros.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

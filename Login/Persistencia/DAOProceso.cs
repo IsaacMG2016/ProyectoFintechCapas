@@ -11,7 +11,7 @@ namespace Login
 {
     public class DAOProceso
     {
-        NpgsqlDataAdapter consultadatos;
+        NpgsqlDataAdapter dadapter;
         DataTable datosbd;
 
         public Boolean agregarProceso(Proceso proc)
@@ -38,6 +38,15 @@ namespace Login
             datosbd = conn.Ejecutar(query, "pmc_cat_enc_proceso").Tables[0];
             conn.Cierra_conexion();
             return datosbd;
+        }
+
+        public NpgsqlDataAdapter recuperaProcesos()
+        {
+
+            string connstring = ConfigurationManager.ConnectionStrings["conexion_db_pmc"].ConnectionString;
+
+            dadapter = new NpgsqlDataAdapter("select * from pmc_cat_enc_proceso", connstring);
+            return dadapter;
         }
     }
 }

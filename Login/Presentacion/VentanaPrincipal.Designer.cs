@@ -36,7 +36,6 @@
             this.groupBoxHistorico = new System.Windows.Forms.GroupBox();
             this.historicoDataGridView = new System.Windows.Forms.DataGridView();
             this.groupBoxBusqueda = new System.Windows.Forms.GroupBox();
-            this.comboBoxEstatus = new System.Windows.Forms.ComboBox();
             this.comboBoxClasificacion = new System.Windows.Forms.ComboBox();
             this.labelPeriodode = new System.Windows.Forms.Label();
             this.labelPeriodoa = new System.Windows.Forms.Label();
@@ -52,6 +51,7 @@
             this.labelPeriodo = new System.Windows.Forms.Label();
             this.labelUltimasEjec = new System.Windows.Forms.Label();
             this.labelNombre = new System.Windows.Forms.Label();
+            this.comboBoxEstatus = new System.Windows.Forms.ComboBox();
             this.groupBoxHistorico.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.historicoDataGridView)).BeginInit();
             this.groupBoxBusqueda.SuspendLayout();
@@ -177,23 +177,6 @@
             this.groupBoxBusqueda.TabStop = false;
             this.groupBoxBusqueda.Text = "Busqueda";
             // 
-            // comboBoxEstatus
-            // 
-            this.comboBoxEstatus.BackColor = System.Drawing.Color.White;
-            this.comboBoxEstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxEstatus.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBoxEstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.comboBoxEstatus.FormattingEnabled = true;
-            this.comboBoxEstatus.Items.AddRange(new object[] {
-            "Todos",
-            "R",
-            "S",
-            "T"});
-            this.comboBoxEstatus.Location = new System.Drawing.Point(691, 31);
-            this.comboBoxEstatus.Name = "comboBoxEstatus";
-            this.comboBoxEstatus.Size = new System.Drawing.Size(107, 28);
-            this.comboBoxEstatus.TabIndex = 15;
-            // 
             // comboBoxClasificacion
             // 
             this.comboBoxClasificacion.BackColor = System.Drawing.Color.White;
@@ -201,8 +184,6 @@
             this.comboBoxClasificacion.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.comboBoxClasificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.comboBoxClasificacion.FormattingEnabled = true;
-            this.comboBoxClasificacion.Items.AddRange(new object[] {
-            "hola"});
             this.comboBoxClasificacion.Location = new System.Drawing.Point(452, 32);
             this.comboBoxClasificacion.Name = "comboBoxClasificacion";
             this.comboBoxClasificacion.Size = new System.Drawing.Size(230, 28);
@@ -345,6 +326,19 @@
             this.labelNombre.TabIndex = 0;
             this.labelNombre.Text = "Nombre";
             // 
+            // comboBoxEstatus
+            // 
+            this.comboBoxEstatus.BackColor = System.Drawing.Color.White;
+            this.comboBoxEstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEstatus.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBoxEstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.comboBoxEstatus.FormattingEnabled = true;
+            this.comboBoxEstatus.Location = new System.Drawing.Point(691, 32);
+            this.comboBoxEstatus.Name = "comboBoxEstatus";
+            this.comboBoxEstatus.Size = new System.Drawing.Size(91, 28);
+            this.comboBoxEstatus.TabIndex = 15;
+            this.comboBoxEstatus.Tag = "";
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,7 +374,6 @@
         private System.Windows.Forms.GroupBox groupBoxHistorico;
         private System.Windows.Forms.GroupBox groupBoxBusqueda;
         private System.Windows.Forms.DataGridView historicoDataGridView;
-        private System.Windows.Forms.ComboBox comboBoxEstatus;
         private System.Windows.Forms.ComboBox comboBoxClasificacion;
         private System.Windows.Forms.Label labelPeriodode;
         private System.Windows.Forms.Label labelPeriodoa;
@@ -396,5 +389,6 @@
         private System.Windows.Forms.Label labelPeriodo;
         private System.Windows.Forms.Label labelUltimasEjec;
         private System.Windows.Forms.Label labelNombre;
+        private System.Windows.Forms.ComboBox comboBoxEstatus;
     }
 }

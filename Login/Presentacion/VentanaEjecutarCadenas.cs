@@ -100,6 +100,7 @@ namespace Login
             if (treeViewClasificados.SelectedNode.Level != 0) //level 0 -> categorias
             {
                 listViewParametros.Clear();
+                listViewParametros.Controls.Clear();
                 textBoxNombre.Text = treeViewClasificados.SelectedNode.Name;      // MOSTRAR NOMBRE DEL PROCESO SELECCIONADO
                 seleccionado = (NodoPanel)treeViewClasificados.SelectedNode.Tag;  // SE HACE EL CAST PARA OBTENER INFO SOBRE EL PROCESO SELECCIONADO
                 textBoxDescripcion.Text = seleccionado.Descripcion;               // MOSTRAR DESCRICPCION DEL PROCESO SELECCIONADO
@@ -144,6 +145,7 @@ namespace Login
         private void treeViewProcesos_DoubleClick(object sender, EventArgs e)
         {
             listViewParametros.Clear();
+            listViewParametros.Controls.Clear();
             textBoxNombre.Text = treeViewProcesos.SelectedNode.Name;      // MOSTRAR NOMBRE DEL PROCESO SELECCIONADO
             seleccionado = (NodoPanel)treeViewProcesos.SelectedNode.Tag;  // SE HACE EL CAST PARA OBTENER INFO SOBRE EL PROCESO SELECCIONADO
             textBoxDescripcion.Text = seleccionado.Descripcion;               // MOSTRAR DESCRICPCION DEL PROCESO SELECCIONADO
@@ -232,8 +234,6 @@ namespace Login
                 textBox_param.Focus();
                 textBox_param.SelectAll();
                 textBox_param.BackColor = SystemColors.ActiveCaption;
-                
-                lv.SendToBack();
 
                 textBox_param.KeyUp += new KeyEventHandler(textBox_param_KeyUp);
             }
